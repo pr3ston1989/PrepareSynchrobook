@@ -1,0 +1,321 @@
+{
+  "schema": 1,
+  "title": "Kocia wyprawa",
+  "author": "QA Nokturn",
+  "language": "pl",
+  "epub_file": "source.epub",
+  "epub_sha256": "ec33beab4094ee457589e66adb7929baad9497940eea6f97a6dec388dd51af1f",
+  "chapters": [
+    {
+      "source": {
+        "name": "01.mp3",
+        "bytes": 9,
+        "sha256": "7b3855a49bb2a486727c59e2494d28629cdc0a50d186b24a77b54103c54bc111",
+        "duration_sec": 60.0
+      },
+      "segments": [
+        {
+          "text": "Bruno 🌙 usiadł na parapecie i spojrzał na ogród. Padał cichy deszcz. Loki spał obok książki, a Ciri słuchała opowieści. Wieczorem cała trójka ruszyła na poszukiwanie zaginionego księżyca.",
+          "start": 2.0,
+          "end": 15.5,
+          "confidence": 0.95,
+          "words": [
+            {
+              "word": "Bruno",
+              "start": 2.0,
+              "end": 2.4
+            },
+            {
+              "word": "usiadł",
+              "start": 2.5,
+              "end": 2.9
+            },
+            {
+              "word": "na",
+              "start": 3.0,
+              "end": 3.4
+            },
+            {
+              "word": "parapecie",
+              "start": 3.5,
+              "end": 3.9
+            },
+            {
+              "word": "i",
+              "start": 4.0,
+              "end": 4.4
+            },
+            {
+              "word": "spojrzał",
+              "start": 4.5,
+              "end": 4.9
+            },
+            {
+              "word": "na",
+              "start": 5.0,
+              "end": 5.4
+            },
+            {
+              "word": "ogród.",
+              "start": 5.5,
+              "end": 5.9
+            },
+            {
+              "word": "Padał",
+              "start": 6.0,
+              "end": 6.4
+            },
+            {
+              "word": "cichy",
+              "start": 6.5,
+              "end": 6.9
+            },
+            {
+              "word": "deszcz.",
+              "start": 7.0,
+              "end": 7.4
+            },
+            {
+              "word": "Loki",
+              "start": 7.5,
+              "end": 7.9
+            },
+            {
+              "word": "spał",
+              "start": 8.0,
+              "end": 8.4
+            },
+            {
+              "word": "obok",
+              "start": 8.5,
+              "end": 8.9
+            },
+            {
+              "word": "książki,",
+              "start": 9.0,
+              "end": 9.4
+            },
+            {
+              "word": "a",
+              "start": 9.5,
+              "end": 9.9
+            },
+            {
+              "word": "Ciri",
+              "start": 10.0,
+              "end": 10.4
+            },
+            {
+              "word": "słuchała",
+              "start": 10.5,
+              "end": 10.9
+            },
+            {
+              "word": "opowieści.",
+              "start": 11.0,
+              "end": 11.4
+            },
+            {
+              "word": "Wieczorem",
+              "start": 11.5,
+              "end": 11.9
+            },
+            {
+              "word": "cała",
+              "start": 12.0,
+              "end": 12.4
+            },
+            {
+              "word": "trójka",
+              "start": 12.5,
+              "end": 12.9
+            },
+            {
+              "word": "ruszyła",
+              "start": 13.0,
+              "end": 13.4
+            },
+            {
+              "word": "na",
+              "start": 13.5,
+              "end": 13.9
+            },
+            {
+              "word": "poszukiwanie",
+              "start": 14.0,
+              "end": 14.4
+            },
+            {
+              "word": "zaginionego",
+              "start": 14.5,
+              "end": 14.9
+            },
+            {
+              "word": "księżyca.",
+              "start": 15.0,
+              "end": 15.4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source": {
+        "name": "02.mp3",
+        "bytes": 9,
+        "sha256": "5772b3992f061723931004e6333fef548f2f7d56cadc0347cb0cc653405bd860",
+        "duration_sec": 90.0
+      },
+      "segments": [
+        {
+          "text": "Następnego ranka niebo było jasne. Koty wróciły do domu i odpoczęły przy kominku. Bruno znalazł miękki koc. Loki patrzył na ptaki za oknem. Ciri zasnęła obok otwartej książki.",
+          "start": 2.0,
+          "end": 16.0,
+          "confidence": 0.95,
+          "words": [
+            {
+              "word": "Następnego",
+              "start": 2.0,
+              "end": 2.4
+            },
+            {
+              "word": "ranka",
+              "start": 2.5,
+              "end": 2.9
+            },
+            {
+              "word": "niebo",
+              "start": 3.0,
+              "end": 3.4
+            },
+            {
+              "word": "było",
+              "start": 3.5,
+              "end": 3.9
+            },
+            {
+              "word": "jasne.",
+              "start": 4.0,
+              "end": 4.4
+            },
+            {
+              "word": "Koty",
+              "start": 4.5,
+              "end": 4.9
+            },
+            {
+              "word": "wróciły",
+              "start": 5.0,
+              "end": 5.4
+            },
+            {
+              "word": "do",
+              "start": 5.5,
+              "end": 5.9
+            },
+            {
+              "word": "domu",
+              "start": 6.0,
+              "end": 6.4
+            },
+            {
+              "word": "i",
+              "start": 6.5,
+              "end": 6.9
+            },
+            {
+              "word": "odpoczęły",
+              "start": 7.0,
+              "end": 7.4
+            },
+            {
+              "word": "przy",
+              "start": 7.5,
+              "end": 7.9
+            },
+            {
+              "word": "kominku.",
+              "start": 8.0,
+              "end": 8.4
+            },
+            {
+              "word": "Bruno",
+              "start": 8.5,
+              "end": 8.9
+            },
+            {
+              "word": "znalazł",
+              "start": 9.0,
+              "end": 9.4
+            },
+            {
+              "word": "miękki",
+              "start": 9.5,
+              "end": 9.9
+            },
+            {
+              "word": "koc.",
+              "start": 10.0,
+              "end": 10.4
+            },
+            {
+              "word": "Loki",
+              "start": 10.5,
+              "end": 10.9
+            },
+            {
+              "word": "patrzył",
+              "start": 11.0,
+              "end": 11.4
+            },
+            {
+              "word": "na",
+              "start": 11.5,
+              "end": 11.9
+            },
+            {
+              "word": "ptaki",
+              "start": 12.0,
+              "end": 12.4
+            },
+            {
+              "word": "za",
+              "start": 12.5,
+              "end": 12.9
+            },
+            {
+              "word": "oknem.",
+              "start": 13.0,
+              "end": 13.4
+            },
+            {
+              "word": "Ciri",
+              "start": 13.5,
+              "end": 13.9
+            },
+            {
+              "word": "zasnęła",
+              "start": 14.0,
+              "end": 14.4
+            },
+            {
+              "word": "obok",
+              "start": 14.5,
+              "end": 14.9
+            },
+            {
+              "word": "otwartej",
+              "start": 15.0,
+              "end": 15.4
+            },
+            {
+              "word": "książki.",
+              "start": 15.5,
+              "end": 15.9
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

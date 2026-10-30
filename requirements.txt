@@ -1,0 +1,6 @@
+faster-whisper==1.2.1
+mutagen==1.47.0
+av==16.1.0
+EbookLib==0.20
+beautifulsoup4==4.14.3
+rapidfuzz==3.14.3
