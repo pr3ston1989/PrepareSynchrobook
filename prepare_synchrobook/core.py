@@ -13,6 +13,7 @@ import math
 import re
 import zipfile
 from pathlib import Path
+from . import __version__
 
 AUDIO_EXTENSIONS = frozenset({".opus", ".mp3", ".m4b", ".m4a", ".ogg", ".flac"})
 FORMAT = "nokturn-synchrobook"
@@ -89,7 +90,7 @@ def make_package(project: dict) -> tuple[bytes, dict]:
     if not project.get("title", "").strip() or not project.get("chapters"):
         raise ValueError("Wpisz tytuł i przygotuj rozpoznawanie audiobooka.")
     timestamps, report, digest = align_project(project)
-    manifest = {"format": FORMAT, "schema": SCHEMA, "generator": "PrepareSynchrobook/0.1.0",
+    manifest = {"format": FORMAT, "schema": SCHEMA, "generator": f"PrepareSynchrobook/{__version__}",
                 "text_source": "existing-epub", "title": project["title"], "author": project.get("author", ""),
                 "language": project.get("language", "pl"), "audio_files": [chapter["source"] for chapter in project["chapters"]],
                 "epub_sha256": digest, "timestamps": timestamps}

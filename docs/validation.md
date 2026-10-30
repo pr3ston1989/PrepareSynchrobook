@@ -1,4 +1,4 @@
-# Walidacja 0.1.0 — 2026-10-30
+# Walidacja 0.1.1 — 2026-10-30
 
 ## Automatyczne
 
@@ -23,3 +23,5 @@ Rzeczywisty test ujawnił niezgodność API `faster-whisper 1.2.1` z PyAV 19. Za
 - Wygląd sprawdzono przy 1000 × 780. Nie deklarujemy walidacji wszystkich skal DPI, rozdzielczości, kart GPU ani kilkunastogodzinnego audiobooka w tej pierwszej wersji.
 
 Do powtarzania podstawowej regresji: `python -m unittest discover -s tests -v`. Testy nie wysyłają wiadomości e-mail ani nie korzystają z produkcyjnych kont i bibliotek.
+
+Po wdrożeniu API na rzeczywistym serwerze: LAN i publiczny HTTPS zwracają oczekiwaną odmowę bez klucza. Domyślny identyfikator biblioteki Python spotkał się z Cloudflare 1010; opisowy identyfikator aplikacji jest przyjmowany. W 0.1.1 ujednolicono go również dla pobierania EPUB i test lokalnego serwera odrzuca pobrania bez tego nagłówka. Nie zmieniano ustawień Cloudflare. Automatyczna regresja GitHub na Windows/Python 3.12 i 3.13 przeszła dla pierwszej publikacji; poprawkę sprawdzono tym samym zestawem.

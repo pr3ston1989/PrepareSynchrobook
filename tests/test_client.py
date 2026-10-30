@@ -32,6 +32,9 @@ class ClientTests(unittest.TestCase):
 
             def do_GET(self):
                 calls.append((self.path, self.headers.get('Authorization'), None, None))
+                if not self.headers.get('User-Agent', '').startswith('PrepareSynchrobook/'):
+                    self.answer({'detail': 'Identified client required'}, 403)
+                    return
                 if self.path == '/api/synchrobooks/capabilities':
                     self.answer({'schema': 1, 'existing_epub_only': True})
                 elif self.path.startswith('/api/synchrobooks/books?'):

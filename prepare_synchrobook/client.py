@@ -7,6 +7,9 @@ from pathlib import Path
 from urllib.error import HTTPError
 from urllib.parse import urlencode, urlsplit
 from urllib.request import HTTPRedirectHandler, Request, build_opener
+from . import __version__
+
+USER_AGENT = f"PrepareSynchrobook/{__version__}"
 
 
 class NoRedirect(HTTPRedirectHandler):
@@ -37,7 +40,7 @@ class NokturnClient:
 
     def request(self, path: str, data=None, content_type="application/json", timeout=60):
         headers = {"Accept": "application/json", "Content-Type": content_type,
-                   "User-Agent": "PrepareSynchrobook/0.1.0"}
+                   "User-Agent": USER_AGENT}
         if self.token:
             headers["Authorization"] = f"Bearer {self.token}"
         if data is not None and content_type == "application/json":
@@ -73,7 +76,7 @@ class NokturnClient:
         return self.request("/api/synchrobooks/books?" + urlencode({"q": query}))["items"]
 
     def download_epub(self, audiobook_id: int, destination: Path):
-        headers = {"Authorization": f"Bearer {self.token}", "Accept": "application/epub+zip"}
+        headers = {"Authorization": f"Bearer {self.token}", "Accept": "application/epub+zip", "User-Agent": USER_AGENT}
         temporary = destination.with_suffix(destination.suffix + ".tmp")
         try:
             with self.opener.open(Request(self.url + f"/api/synchrobooks/{int(audiobook_id)}/epub", headers=headers), timeout=180) as response:
